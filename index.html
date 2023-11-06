@@ -1,21 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/asessts/script/script.js" defer></script>
+    <script type="module" src="/asessts/script/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="./asessts/style/style.css">
+    
     <title>formulaire-inscription</title>
 </head>
 <body>
-    <head>
-
-    </head>
+    <header>
+        <h1>Code of the Day</h1>
+        <h2><strong>Le quotidien développeurs en berbe !</strong></h2>
+        <p>Bienvenu sur le portail d'inscruption à notre liste d'abonnement
+            Ici vous pourrez demander à ce que votre journal préféré vous soit livré chaque jour
+           Dès que nos équipes rcervont votre demande, vous serez contacter par courrier éléctronique. 
+        </p>
+    </header>
     <main>
-
+        <h3>Formaulaire d'nscription</h3>
+        <div class="container-identite">  
+              <fieldset>
+                <legend>Identité</legend>
+                <label for="genre-homme">Monsieur
+                    <input type="radio" value="genre-homme" checked id="genre-homme">
+                </label>
+                <label for="genre-femme">Madame
+                    <input type="radio" value="genre-femme" id="genre-femme">
+                </label>
+                <label for="nom">Nom :
+                    <input type="text" value="" id="nom" placeholder="Entrer votre nom">
+                </label>
+                <label for="prenom">Prénom :
+                    <input type="text" value="" id="prenom" placeholder="Entrer votre prénom !">
+                </label>
+                <label for="mail">E-mail :
+                    <input type="text"  placeholder="Entrer votre E-mail !" id="mail">
+                </label>
+              </fieldset>  
+        </div>
+        <div class="container-facturisation">
+              <fieldset>
+                <legend>Adrss de facturisation </legend>
+                <label for="rue">Rue :
+                    <input type="text" placeholder="Enrter votre Rue" id="rue">
+                </label>
+                <label for="ville">Ville :
+                    <input type="text" id="ville" placeholder="Entrer votre ville ">
+                </label>
+                <label for="codePostal">Code postal :
+                    <input type="text"  id="codePostal" placeholder="Entrer votre code postal ">
+                    <div style="display: none" id="error-message"></div>
+                </label>
+              </fieldset>  
+        </div>
+        <div class="container-livraison">
+              <fieldset>
+                <legend>Adress de livraison</legend>
+                <label for="rue2">Rue :
+                    <input type="text" id="rue2">
+                </label>
+                <label for="ville2">Ville :
+                    <input type="text" id="ville2">
+                </label>
+                <label for="code-postal2">Code postal :
+                    <input type="text" id="code-postal2">
+                </label>
+              </fieldset>  
+        </div>
+        <button type="submit" class="btn-valider">Valider</button>
     </main>
     <footer>
-        
+        <h4>Georges Développeur- @Code of the day-2023</h4>
     </footer>
 </body>
 </html>
