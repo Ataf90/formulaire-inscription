@@ -1,0 +1,19 @@
+{
+  "name": "formulaire-inscription",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ataf90/formulaire-inscription.git"
+  },
+  "author": "Ataf Georges El EID",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ataf90/formulaire-inscription/issues"
+  },
+  "homepage": "https://github.com/Ataf90/formulaire-inscription#readme"
+}
