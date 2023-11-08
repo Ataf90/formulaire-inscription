@@ -11,4 +11,7 @@ header{
     font-size:36px ;  
 }
 
-
+ul .list-rue::hover{
+  background-color: powderblue;
+  transition: background-color 0.5s;
+}
