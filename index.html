@@ -19,37 +19,24 @@
         </p>
     </header>
     <main>
-        <h3>Formaulaire d'nscription</h3>
+        <h3>Formulaire d'nscription</h3>
         <div class="container-identite">  
               <fieldset>
                 <legend>Identité</legend>
-                <label for="genre-homme">Monsieur
-                    <input type="radio" value="genre-homme" checked id="genre-homme">
-                </label>
-                <label for="genre-femme">Madame
-                    <input type="radio" value="genre-femme" id="genre-femme">
-                </label>
-                <label for="nom">Nom :
-                    <input type="text" value="" id="nom">
-                </label>
-                <label for="prenom">Prénom :
-                    <input type="text" value="" id="prenom">
-                </label>
-                <label for="mail">E-mail :
-                    <input type="text" id="mail">
-                </label>
+                <div class="gender"><label>Monsieur<input type="radio" name="gendre" value="genre-homme" checked id="genre-homme"></label>
+                <label>Madame<input type="radio" name="gendre" value="genre-femme" id="genre-femme"></label></div>
+
+                <label>Nom :<input type="text" value="" id="nom"></label>
+                <label>Prénom :<input type="text" value="" id="prenom"></label>
+                <label>E-mail :<input type="text" id="mail"></label>
               </fieldset>  
         </div>
         <div class="container-facturisation">
               <fieldset>
                 <legend>Adress de facturisation </legend>
-                <label for="rue">Rue :
-                    <input type="text" id="rue"></label><ul></ul>
-                <label for="ville">Ville :
-                    <input type="text" id="ville">
-                </label>
-                <label for="codePostal">Code postal :
-                    <input type="text"  id="codePostal">
+                <label>Rue :<input type="text" id="rue"></label><ul></ul>
+                <label >Ville :<input type="text" id="ville"></label>
+                <label>Code postal :<input type="text"  id="codePostal"></label>
                     <div style="display: none" id="error-message"></div>
                 </label>
               </fieldset>  
@@ -57,15 +44,9 @@
         <div class="container-livraison">
               <fieldset>
                 <legend>Adress de livraison</legend>
-                <label for="rue2">Rue :
-                    <input type="text" id="rue2">
-                </label>
-                <label for="ville2">Ville :
-                    <input type="text" id="ville2">
-                </label>
-                <label for="codePostal2">Code postal :
-                    <input type="text" id="codePostal2">
-                </label>
+                <label>Rue :<input type="text" id="rue2"></label>
+                <label>Ville :<input type="text" id="ville2"></label>
+                <label>Code postal :<input type="text" id="codePostal2"></label>
               </fieldset>  
         </div>
         <button type="submit" class="btn-valider">Valider</button>
